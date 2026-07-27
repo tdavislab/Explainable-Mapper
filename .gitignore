@@ -1,0 +1,41 @@
+# OS / editor
+.DS_Store
+*.swp
+*~
+
+# Secrets — never commit
+.env
+**/.env
+!**/.env.example
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/venv/
+**/.venv/
+
+# Node / React
+**/node_modules/
+frontend/build/
+frontend/coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backend runtime & local data (dataset is hosted separately)
+backend/data/
+backend/flask_session/
+backend/venv/
+
+# Local / unpublished tooling
+/dataProcessor
+/deprecatedFiles
+backend/DataProcessor/
+backend/Tests/
+
+# Large demo media may be tracked intentionally under docs/;
+# uncomment the next line if you prefer hosting the video outside Git:
+# docs/*.mp4
+# docs/*.mov
+# docs/*.webm

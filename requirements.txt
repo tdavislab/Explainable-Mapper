@@ -1,0 +1,8 @@
+# Backend dependencies live in backend/requirements.txt.
+# Install with:
+#   cd backend
+#   python -m venv venv
+#   source venv/bin/activate   # Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# Full system requirements: docs/REQUIREMENTS.md

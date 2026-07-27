@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/venv
+/flores_data
+/topobert_data
+/__pycache__
+/flores_tokens_data
+/mapper_data
+/projection_data
+/PUD_data
+/flores_plus_tokens_data 
+/gmb_data
+/data
+__pycache__/
+*.py[cod]
+# Ignore .DS_Store files
+.DS_Store
+# /DataProcessor/perturb_data_gmb_basicjokes
+# /DataProcessor/perturb_data_gmb_cia
+# /DataProcessor/perturb_data_gmb
+/DataProcessor
+/flask_session
+.env
+*.env

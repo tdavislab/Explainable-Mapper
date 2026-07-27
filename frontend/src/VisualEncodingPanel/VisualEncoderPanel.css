@@ -1,0 +1,74 @@
+.legend {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    flex-wrap: wrap; 
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid #d3d3d3; */
+    background-color: white; 
+  } 
+  
+  .legend-category-dropdown {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    /* border-bottom: 1px solid lightgray; */
+    /* background-color: grey; */
+  } 
+  
+  /* query a word */
+  .word-query-div{
+    width: 100%;
+    padding: 5px 0 0 0;
+  }
+  
+  
+  /*------------discrete or continous attribute--------------*/
+  .discrete-attrs-container{
+    margin-top: -5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    flex-wrap: wrap;
+    /* border: 1px solid rgb(211, 211, 211); */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; 
+    border-radius: 5px;
+  }
+  .discrete-attr-container {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-auto-rows: auto auto;
+    justify-content: center; /* Centers the entire grid horizontally */
+    justify-items: start;
+    align-content: center;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: default;
+  } 
+  .discrete-attr-value { /*color rectangular + text*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  .color-box {
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+  }
+  
+  /* table */
+  .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-container table {
+    width: 100%;
+    table-layout: auto;
+  }
+  

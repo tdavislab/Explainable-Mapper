@@ -1,0 +1,35 @@
+/*the first selected node*/
+.first-select-node{
+    stroke-width: 2px !important;
+    stroke: black !important;
+    stroke-dasharray: 2 2 !important;  /* Creates a dashed pattern */
+  }
+  .ready-path-nodes{
+    stroke-width: 2px !important;
+    stroke: black !important;
+  }
+  
+
+
+  /*Graph rendering attributes*/
+  /*When selecting an edge*/
+  .selected-edge{
+    stroke: black !important;
+    stroke-width: 2px !important;
+  }
+  /*When selecting an edge, get the two nodes */
+  .selected-edge-nodes{
+    stroke: black !important;
+  }
+  /*When selecting a node on a selected path or component*/
+  .halo-effect{
+    stroke: grey !important;
+    stroke-width: 10px !important;
+    stroke-opacity: 0.3 !important;
+  }
+  /* Comparison mode for nodes: when 2nd node or component is selected */
+  .comparison-node{
+    stroke: black !important;
+    /* stroke-width: 2px !important; */
+    stroke-dasharray: 4 2 !important; /* Adds a dashed stroke */
+  }

@@ -1,0 +1,123 @@
+.projection-tool-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left; 
+}
+
+.projection-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+}
+
+.projection-view > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.projection-computing-overlay,
+.projection-error-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.projection-computing-overlay {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #d0d0d0;
+  color: #333;
+}
+
+.projection-error-banner {
+  background: rgba(255, 235, 238, 0.95);
+  border: 1px solid #ef9a9a;
+  color: #b71c1c;
+  white-space: normal;
+  max-width: 90%;
+  text-align: center;
+}
+
+/*Select a point in the projection plot*/
+.points-selected {
+  opacity: 1 !important;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.points-unselected {
+  fill-opacity: 0.2;
+  stroke: none;
+  stroke-width: 0px;
+}
+
+/* Base projection point style */
+.projection-point {
+  fill-opacity: 0.9;
+}
+
+.projection-point.points-unselected {
+  fill-opacity: 0.01;
+}
+
+
+/* .model-layer-select-container{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px; 
+  display: flex;
+  padding: 0 0 1px 3px ;
+  justify-content: left;
+  align-items: center; 
+  gap: 1px;
+}
+
+.plot-edit-container{
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 30px 1fr;
+}
+
+.svg-edit-container{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 0 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left; 
+}
+
+.svg-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+/*the vertical separation line between layer and timestamp selections*/
+/* .timestamp-layer-divider{
+  border-right-color: rgba(0,0,0,0.6);
+  margin: 3px 7px;
+} */
+
+
+/*the first selected node*/
+/* .first-select-node{
+  stroke-width: 2px !important;
+  stroke: black !important;
+  stroke-dasharray: 2 2 !important; 
+}
+.ready-path-nodes{
+  stroke-width: 2px !important;
+  stroke: black !important;
+} */

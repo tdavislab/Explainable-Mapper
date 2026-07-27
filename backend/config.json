@@ -1,0 +1,115 @@
+{
+  "default": "topobert_data_bertbase",
+  "topobert_data_bertbase": {
+    "DATASET_NAME": "topobert_data",
+    "NAME": "ss-role",
+    "MODEL_NAME": "FT_BertBase",
+    "LAYER_NUM": 12,
+    "CATEGORY_ATTRIBUTE": "label",
+    "MapperParameters": {
+      "cover_num": 50,
+      "overlap_pct": 0.5,
+      "minPts_val": 3,
+      "cover_strategy": "uniform"
+    },
+    "PATHS": {
+      "SENTENCES_PATH": "./data/{DATASET_NAME}/{NAME}/sentences/train.json",
+      "METADATA_PATH": "./data/{DATASET_NAME}/{NAME}/entities/train.txt", 
+      "EMBEDS_BASE_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/embedding/train/413",
+      "PERTURB_EMBEDS_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/{MODEL_NAME}_embeds",
+      "PERTURB_META_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/metadata.pkl",
+      "NODE_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/explanations/nodes_explanation_layer{LAYER_NUM}.json",
+      "COMPONENT_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/explanations/components_explanation_layer{LAYER_NUM}.json",
+      "MODEL_CHECKPOINT_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/models/checkpoint-413"
+    }
+  },
+  "topobert_data_roberta": {
+    "DATASET_NAME": "topobert_data",
+    "NAME": "ss-role",
+    "MODEL_NAME": "FT_Roberta",
+    "LAYER_NUM": 12,
+    "CATEGORY_ATTRIBUTE": "label",
+    "MapperParameters": {
+      "cover_num": 50,
+      "overlap_pct": 0.5,
+      "minPts_val": 3,
+      "cover_strategy": "uniform"
+    },
+    "PATHS": {
+      "SENTENCES_PATH": "./data/{DATASET_NAME}/{NAME}/sentences/train.json",
+      "METADATA_PATH": "./data/{DATASET_NAME}/{NAME}/entities/train.txt", 
+      "EMBEDS_BASE_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/embedding/train/413",
+      "PERTURB_EMBEDS_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/{MODEL_NAME}_embeds",
+      "PERTURB_META_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/metadata.pkl",
+      "NODE_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/explanations/nodes_explanation_layer{LAYER_NUM}.json",
+      "COMPONENT_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/explanations/components_explanation_layer{LAYER_NUM}.json",
+      "MODEL_CHECKPOINT_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}/models/checkpoint-413"
+    }
+  },
+  "gmb_data_cia": {
+    "DATASET_NAME": "gmb_data",
+    "NAME": "cia_world_factbook_refined_for_expert_study",
+    "MODEL_NAME": "BertBase",
+    "LAYER_NUM": 12,
+    "CATEGORY_ATTRIBUTE": "label", 
+    "MapperParameters": {
+      "cover_num": 50,
+      "overlap_pct": 0.3,
+      "minPts_val": 5,
+      "cover_strategy": "quantile"
+    },
+    "PATHS": {
+      "SENTENCES_PATH": "./data/{DATASET_NAME}/{NAME}/sentences.json",
+      "METADATA_PATH": "./data/{DATASET_NAME}/{NAME}/metadata.pkl",
+      "EMBEDS_BASE_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}_embeds",
+      "PERTURB_EMBEDS_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/{MODEL_NAME}_embeds",
+      "PERTURB_META_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/metadata.pkl",
+      "NODE_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}_explanations/nodes_explanation_layer{LAYER_NUM}.json",
+      "COMPONENT_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}_explanations/components_explanation_layer{LAYER_NUM}.json"
+    }
+  },
+  "gmb_data_cia_modernBERT": {
+    "DATASET_NAME": "gmb_data",
+    "NAME": "cia_world_factbook_refined_for_expert_study",
+    "MODEL_NAME": "ModernBERT",
+    "LAYER_NUM": 22,
+    "CATEGORY_ATTRIBUTE": "label",
+    "MapperParameters": {
+      "cover_num": 50,
+      "overlap_pct": 0.3,
+      "minPts_val": 5,
+      "cover_strategy": "quantile"
+    },
+    "PATHS": {
+      "SENTENCES_PATH": "./data/{DATASET_NAME}/{NAME}/sentences.json",
+      "METADATA_PATH": "./data/{DATASET_NAME}/{NAME}/metadata.pkl",
+      "EMBEDS_BASE_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}_embeds",
+      "PERTURB_EMBEDS_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/{MODEL_NAME}_embeds",
+      "PERTURB_META_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/metadata.pkl",
+      "NODE_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/explanations/nodes_explanation_layer{LAYER_NUM}.json",
+      "COMPONENT_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/explanations/components_explanation_layer{LAYER_NUM}.json"
+    }
+  },  
+    "gmb_data_basicjokes": {
+    "DATASET_NAME": "gmb_data",
+    "NAME": "basicjokes",
+    "MODEL_NAME": "embeds",
+    "LAYER_NUM": 12,
+    "CATEGORY_ATTRIBUTE": "label",
+    "MapperParameters": {
+      "cover_num": 50,
+      "overlap_pct": 0.3,
+      "minPts_val": 5,
+      "cover_strategy": "quantile"
+    },
+    "PATHS": {
+      "SENTENCES_PATH": "./data/{DATASET_NAME}/{NAME}/sentences.json",
+      "METADATA_PATH": "./data/{DATASET_NAME}/{NAME}/metadata.pkl",
+      "EMBEDS_BASE_PATH": "./data/{DATASET_NAME}/{NAME}/{MODEL_NAME}_embeds",
+      "PERTURB_EMBEDS_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/{MODEL_NAME}_embeds",
+      "PERTURB_META_PATH": "./data/{DATASET_NAME}/{NAME}/perturbation_data_4o/metadata.pkl",
+      "NODE_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/explanations/nodes_explanation_layer{LAYER_NUM}.json",
+      "COMPONENT_EXPLANATION_PATH": "./data/{DATASET_NAME}/{NAME}/explanations/components_explanation_layer{LAYER_NUM}.json"
+    }
+    }
+}
