@@ -254,12 +254,4 @@ After that, restart the backend and frontend and load your data like the default
 
 If you use this software in your research, please cite:
 
-> Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents. IEEE VIS 2026.
-
-```bibtex
-@inproceedings{explainablemapper2026,
-  title     = {Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents},
-  booktitle = {IEEE Visualization Conference (VIS)},
-  year      = {2026}
-}
-```
+> Xinyuan Yan, Rita Sevastjanova, Sinie van der Ben, Mennatallah El-Assady, and Bei Wang. Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents. IEEE VIS 2026.
