@@ -250,6 +250,16 @@ After that, restart the backend and frontend and load your data like the default
 
 ---
 
-## Citation / acknowledgment
+## Citation
 
-If you use this software or the TopoBERT-related materials in research, please cite the corresponding papers / dataset releases (add citation entries here before public announcement).
+If you use this software in your research, please cite:
+
+> Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents. IEEE VIS 2026.
+
+```bibtex
+@inproceedings{explainablemapper2026,
+  title     = {Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents},
+  booktitle = {IEEE Visualization Conference (VIS)},
+  year      = {2026}
+}
+```
